@@ -9,11 +9,11 @@ This application allows users to:
 - Explore transaction details by clicking on them
 
 ## Features
-- 🔍 Analyze high-value transactions on the Celestia blockchain
-- 📊 View staking activity and trends
-- 🤖 AI-generated investment insights using OpenAI
-- 📱 Fully responsive design for all devices
-- ⚡ Fast, server-side rendering with Next.js
+🔍 Analyze high-value transactions on the Celestia blockchain
+📊 View staking activity and trends
+🤖 AI-generated investment insights using OpenAI
+📱 Fully responsive design for all devices
+⚡ Fast, server-side rendering with Next.js
 
 ## Tech Stack
 Frontend: Next.js, React, TypeScript, Tailwind CSS
@@ -83,31 +83,16 @@ Open http://localhost:3000 with your browser to see the application.
 ![Data Flow](https://res.cloudinary.com/dacofvu8m/image/upload/v1741118054/CleanShot_2025-03-04_at_14.53.53_2x_ymuocu.png)
 
 ### Key Components
+
 - **Form**: Collects user parameters for the report
 - **DataTable**: Displays transaction data in a paginated table, with the `Columns` component defining the table columns.
 - **API Routes**: Handle data fetching and AI processing
+- **Shadcn**: We use additional UI components from Shadcn.
 
 ## Development
 
 ### Project Structure
-src/
-├── app/
-│   ├── api/
-│   │   ├── insights/
-│   │   │   └── route.ts       # OpenAI API integration
-│   │   └── transactions/
-│   │       ├── requests.ts    # Client-side API functions
-│   │       └── route.ts       # Celenium API integration
-│   ├── globals.css            # Global styles
-│   ├── layout.tsx             # Root layout
-│   └── page.tsx               # Main page component
-├── components/
-│   ├── Columns.tsx            # Table column definitions
-│   ├── DataTable.tsx          # Reusable data table component
-│   ├── Form.tsx               # Input form component
-│   └── ui/                    # UI components from shadcn/ui
-└── types/
-    └── index.ts               # TypeScript type definitions
+![Folder Structure](https://res.cloudinary.com/dacofvu8m/image/upload/v1741141914/CleanShot_2025-03-04_at_21.31.21_2x_r8tbkt.png)
 
 ## Building for Production
 
